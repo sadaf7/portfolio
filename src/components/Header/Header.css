@@ -1,0 +1,50 @@
+header{
+    /* height: 100vh; */
+    padding-top: 4rem;
+    overflow: hidden;
+}
+.header_container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+
+.scroll_down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 4rem;
+    transform: rotate(90deg);
+}
+/* ----CTA---- */
+.cta{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* ----HeaderSocials--- */
+.header_socials{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+
+/* -----For Medium Devices----- */
+@media screen and (max-width: 1024px) {
+    header{
+        /* height: 68vh; */
+    }
+}
+
+/* -----For Small Devices----- */
+@media screen and (max-width: 600px) {
+    header{
+        /* height: 100vh; */
+    }
+    .scroll_down{
+        display: none;
+    }
+}
