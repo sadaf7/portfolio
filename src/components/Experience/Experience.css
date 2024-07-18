@@ -1,15 +1,23 @@
 .experience_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+/* .experience_container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-}
+} */
+
 .experience_container > div{
     padding: 2.5rem 5rem;
     border-radius: 2rem;
     border: 1px solid transparent;
-    background: var(--color-primary-varient );
+    background: var(--color-bg-varient);
     cursor: pointer;
     transition: var(--transition);
+   
 }
 
 .experience_container > div:hover{
@@ -21,9 +29,11 @@
     margin-bottom: 2rem;
     color: var(--color-primary);
 }
+
 .experience_content{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
 }
 .experience_details{
     display: flex;
@@ -58,4 +68,8 @@
         width: 100%;
         padding: 2rem 1rem;
     } 
+    .experience_content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 }

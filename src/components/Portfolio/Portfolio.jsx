@@ -2,7 +2,7 @@ import React from 'react'
 import './Portfolio.css'
 import pic1 from '../../assets/live-chat.png'
 import pic2 from '../../assets/notebook.png'
-import pic3 from '../../assets/news.png'
+import pic3 from '../../assets/ecommerce.png'
 import pic4 from '../../assets/weather.png'
 
 const Portfolio = () => {
@@ -15,16 +15,16 @@ const Portfolio = () => {
     github: "https://github.com/sadaf7/MERN-LIVECHAT-APP"
   },
   {
+    id: 3,
+    image: pic3,
+    title: "E-Commerce",
+    github: "https://github.com/sadaf7/Ecommerce-MERN"
+  },
+  {
     id: 2,
     image: pic2,
     title: "E-NotePad",
     github: "https://github.com/sadaf7/E-NotePad"
-  },
-  {
-    id: 3,
-    image: pic3,
-    title: "E-News",
-    github: "https://github.com/sadaf7/E-News"
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const Portfolio = () => {
       <h5>My Projects</h5>
       <h2>Portfolio</h2>
 
-      <div className="container portfolio_container">
+      <div className="portfolio_container">
         {data.map((item,index)=>{
           return(
             <article key={index} className="portfolio_item">
