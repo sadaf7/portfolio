@@ -1,0 +1,45 @@
+.job_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.job_container > div{
+    padding: 2.5rem 5rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    background: var(--color-bg-varient);
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 50px;
+   
+}
+
+.job_container > div:hover{
+    background: transparent;
+    border-color: var(--color-primary-varient );
+}
+h4,h2{
+    color: var(--color-primary);
+}
+.job{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+}
+
+@media screen and (max-width: 600px) {
+    .job_container{
+        gap: 1rem;
+    }
+    .job_container > div{
+        width: 100%;
+        padding: 2rem 1rem;
+    } 
+    .experience_content{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
